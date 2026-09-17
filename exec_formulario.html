@@ -1,21 +1,94 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface de login do Trello</title>
-</head>
-<body>
-       <h1>Trello</h1>
-       <h1>Fazer login no Trello</h1>
-       <label for="email">
-        <input type="text" name="email" placeholder="Insira o e-mail">
-       </label> <br>
-       <label for="senha">
-        <input type="password" name="senha" placeholder="Insira a senha">
-       </label> <br>
-       <button type="submit">Fazer login</button>
 
-       <h3>Ou</h3>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interface de Login do Trello</title>
+
+    <link rel="stylesheet" href="exec_formulario.css">
+</head>
+
+<body>
+
+    <!-- Logo do Trello -->
+    <img id="logo" src="assets/trello.svg" width="200" alt="Logo do Trello">
+
+
+    <!-- Área principal do login -->
+    <div id="login">
+
+        <form action="" method="post">
+
+            <h1>Fazer login no Trello</h1>
+
+            <input type="text" name="email" placeholder="Insira o e-mail">
+
+            <input type="password" name="senha" placeholder="Insira a senha">
+
+            <button id="login-button" type="submit">
+                Fazer login
+            </button>
+
+        </form>
+
+
+        <!-- Separador -->
+        <span>Ou</span>
+
+
+        <!-- Login com outras plataformas -->
+        <div id="social-login">
+
+            <button class="social-button" type="button">
+                <img src="assets/google.svg" width="15" alt="">
+                Continuar com o Google
+            </button>
+
+
+            <button class="social-button" type="button">
+                <img src="assets/microsoft.svg" width="15" alt="">
+                Continuar com a Microsoft
+            </button>
+
+
+            <button class="social-button" type="button">
+                <img src="assets/apple.svg" width="15" alt="">
+                Continuar com a Apple
+            </button>
+
+
+            <button class="social-button" type="button">
+                <img src="assets/slack.svg" width="15" alt="">
+                Continuar com o Slack
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Imagens decorativas -->
+    <div id="imagens">
+
+        <!-- Atlassian embaixo -->
+        <img src="assets/atlassian.svg" width="300" alt="Logo Atlassian">
+
+        <!-- Analytics à direita -->
+        <img src="assets/analytics.svg" width="400" alt="Imagem de analytics">
+
+        <!-- Interactive à esquerda -->
+        <img src="assets/interactive.svg" width="400" alt="Imagem interativa">
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
